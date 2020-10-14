@@ -13,6 +13,7 @@
 #define ScreenHeight [[UIScreen mainScreen] bounds].size.height
 #define ScreenWidth [[UIScreen mainScreen] bounds].size.width
 
+
 @interface ViewController ()
 
 @property (nonatomic,strong) DPCPickerView *collegeAllPickerView; //学院选择
