@@ -35,6 +35,11 @@ TODO: Add long description of the pod here.
   # s.resource_bundles = {
   #   'DPCPickerView' => ['DPCPickerView/Assets/*.png']
   # }
+  #将自动创建DPCPickerView.boundle
+#  s.resource_bundles = {
+#    'DPCPickerViewImg' => ['DPCPickerView/Assets/*']
+#  }
+  s.resources = ['DPCPickerView/Assets/*']
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
