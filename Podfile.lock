@@ -1,0 +1,16 @@
+PODS:
+  - DPCPickerView (0.1.0)
+
+DEPENDENCIES:
+  - DPCPickerView (from `Lib/DPCPickerView`)
+
+EXTERNAL SOURCES:
+  DPCPickerView:
+    :path: Lib/DPCPickerView
+
+SPEC CHECKSUMS:
+  DPCPickerView: 3cba1b8288bf2b7245919e963937d31acddb87aa
+
+PODFILE CHECKSUM: ffc9879aeef08f9dc50dda2166e63e927b7e37f0
+
+COCOAPODS: 1.10.0.rc.1

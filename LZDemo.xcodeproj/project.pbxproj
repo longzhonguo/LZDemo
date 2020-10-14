@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,9 +15,13 @@
 		ABF389DF25368B0A00256A27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABF389DE25368B0A00256A27 /* Assets.xcassets */; };
 		ABF389E225368B0A00256A27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABF389E025368B0A00256A27 /* LaunchScreen.storyboard */; };
 		ABF389E525368B0A00256A27 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF389E425368B0A00256A27 /* main.m */; };
+		AD7258A075A135F0C8B69B45 /* Pods_LZDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2408D6E22AFA6A84A3FD203D /* Pods_LZDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2408D6E22AFA6A84A3FD203D /* Pods_LZDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LZDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EFAD7E14F308313876D16B9 /* Pods-LZDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZDemo.debug.xcconfig"; path = "Target Support Files/Pods-LZDemo/Pods-LZDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		4C5751CA36FDEF174D251972 /* Pods-LZDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZDemo.release.xcconfig"; path = "Target Support Files/Pods-LZDemo/Pods-LZDemo.release.xcconfig"; sourceTree = "<group>"; };
 		ABF389CC25368B0900256A27 /* LZDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LZDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABF389CF25368B0900256A27 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ABF389D025368B0900256A27 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -38,17 +42,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD7258A075A135F0C8B69B45 /* Pods_LZDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3AEA6A64E4996EC74C1FD77C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3EFAD7E14F308313876D16B9 /* Pods-LZDemo.debug.xcconfig */,
+				4C5751CA36FDEF174D251972 /* Pods-LZDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		ABF389C325368B0900256A27 = {
 			isa = PBXGroup;
 			children = (
 				ABF389CE25368B0900256A27 /* LZDemo */,
 				ABF389CD25368B0900256A27 /* Products */,
+				3AEA6A64E4996EC74C1FD77C /* Pods */,
+				E39DA92585D043BC1B71D807 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +95,14 @@
 			path = LZDemo;
 			sourceTree = "<group>";
 		};
+		E39DA92585D043BC1B71D807 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2408D6E22AFA6A84A3FD203D /* Pods_LZDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ABF389E825368B0A00256A27 /* Build configuration list for PBXNativeTarget "LZDemo" */;
 			buildPhases = (
+				FB6D4FD89C76BF3A4FAB30F1 /* [CP] Check Pods Manifest.lock */,
 				ABF389C825368B0900256A27 /* Sources */,
 				ABF389C925368B0900256A27 /* Frameworks */,
 				ABF389CA25368B0900256A27 /* Resources */,
+				2A859EF012F7A1E152D8676F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -143,6 +169,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A859EF012F7A1E152D8676F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LZDemo/Pods-LZDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LZDemo/Pods-LZDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LZDemo/Pods-LZDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB6D4FD89C76BF3A4FAB30F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LZDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		ABF389C825368B0900256A27 /* Sources */ = {
@@ -291,6 +359,7 @@
 		};
 		ABF389E925368B0A00256A27 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EFAD7E14F308313876D16B9 /* Pods-LZDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -308,6 +377,7 @@
 		};
 		ABF389EA25368B0A00256A27 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C5751CA36FDEF174D251972 /* Pods-LZDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

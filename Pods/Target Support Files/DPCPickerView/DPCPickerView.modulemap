@@ -1,0 +1,6 @@
+framework module DPCPickerView {
+  umbrella header "DPCPickerView-umbrella.h"
+
+  export *
+  module * { export * }
+}
