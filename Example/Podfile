@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'DPCPickerView_Example' do
+  pod 'DPCPickerView', :path => '../'
+
+  target 'DPCPickerView_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
